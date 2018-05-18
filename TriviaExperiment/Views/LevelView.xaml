@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="LevelView"
+             xmlns:converters="clr-namespace:TriviaExperiment.ViewModels.Converters"
+             x:Class="TriviaExperiment.Views.LevelView">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SelectedToColorConverter x:Key="SelectedToColor"></converters:SelectedToColorConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <StackLayout Padding="50">
+        <Label Text="{Binding CurrentQuestion.Question}" HorizontalOptions="Center" VerticalOptions="Start"  FontSize="Large" Margin="0,0,0,30"/>
+
+        
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="300">
+
+         <ListView x:Name="lstvQuestion"
+                  ItemsSource="{Binding lstAnswers}"
+                   HasUnevenRows="true"
+                   SeparatorColor="Orange">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="50">
+                        <StackLayout Orientation="Horizontal" BackgroundColor="{Binding IsSelected, Converter={StaticResource SelectedToColor}}">
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Path=BindingContext.SelectAnswerCommand, Source={x:Reference LevelView}}"
+                                                      CommandParameter="{Binding ID}"/>
+                                
+                            </StackLayout.GestureRecognizers>
+                            <Label Text="{Binding Answer}" FontSize="Medium" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+            </StackLayout>
+
+        <Button Text="Submit Answer" Command="{Binding SubmitAnswerCommand}" BackgroundColor="Orange" VerticalOptions="EndAndExpand"/>
+            
+        
+    </StackLayout>
+    
+
+</ContentPage>

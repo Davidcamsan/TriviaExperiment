@@ -1,0 +1,9 @@
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/bin/Debug/netstandard2.0/TriviaExperiment.deps.json
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/bin/Debug/netstandard2.0/TriviaExperiment.dll
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/bin/Debug/netstandard2.0/TriviaExperiment.pdb
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.csprojResolveAssemblyReference.cache
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.csproj.CoreCompileInputs.cache
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.AssemblyInfoInputs.cache
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.AssemblyInfo.cs
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.dll
+/Users/carmen/Projects/TriviaExperiment/TriviaExperiment/obj/Debug/netstandard2.0/TriviaExperiment.pdb
